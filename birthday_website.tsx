@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React, { useState, useEffect, useRef } from 'react';
 
 type Message = { type: 'bot' | 'user'; text: string };
@@ -32,7 +30,7 @@ const BirthdayWebsite = () => {
   const handleSendMessage = () => {
     if (!userInput.trim()) return;
 
-    const newMessages = [...chatMessages, { type: 'user', text: userInput }];
+    const newMessages: Message[] = [...chatMessages, { type: 'user' as const, text: userInput }];
     
     const lowerInput = userInput.toLowerCase();
     let botReply = '';
@@ -50,7 +48,7 @@ const BirthdayWebsite = () => {
     }
 
     setTimeout(() => {
-      setChatMessages([...newMessages, { type: 'bot', text: botReply }]);
+      setChatMessages([...newMessages, { type: 'bot' as const, text: botReply }]);
     }, 800);
 
     setChatMessages(newMessages);
@@ -65,7 +63,7 @@ const BirthdayWebsite = () => {
             left: `${Math.random() * 100}%`,
             animationDelay: `${Math.random() * 5}s`,
             animationDuration: `${8 + Math.random() * 4}s`
-          }}>💙</div>
+          }}>💙😎😎🥰</div>
         ))}
       </div>
       
@@ -116,17 +114,10 @@ const BirthdayWebsite = () => {
       <div className={`memories-section ${isLetterVisible ? 'visible' : ''}`}>
         <h3>Our Beautiful Memories 🎬</h3>
         <div className="video-container">
-          {/* PLACEHOLDER: Replace with your video source */}
-          <div className="video-placeholder">
-            <div className="play-icon">▶</div>
-            <p>Video will play here</p>
-            <small>Replace the src attribute in the code with your video file</small>
-          </div>
-          {// Uncomment and add your video:
-          <video controls>
-            <source src="assets/birthday-video.mp4" type="video/mp4" />
+          <video controls playsInline>
+            <source src="/birthday-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
-          }
         </div>
       </div>
 
