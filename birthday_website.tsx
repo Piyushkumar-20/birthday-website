@@ -7,7 +7,7 @@ type Message = { type: 'bot' | 'user'; text: string };
 const BirthdayWebsite = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [chatMessages, setChatMessages] = useState<Message[]>([
-    { type: 'bot', text: '💙 Hey! I\'m so happy you\'re here! Ask me anything about your special day!' }
+    { type: 'bot', text: 'Hey! I\'m so happy you\'re here! Chalo Chalo Jald se hi type kar ke bhejo ' }
   ]);
   const [userInput, setUserInput] = useState('');
   const [isLetterVisible, setIsLetterVisible] = useState(false);
@@ -39,8 +39,9 @@ const BirthdayWebsite = () => {
 
     // Rule-based responses (PLACEHOLDER - customize these!)
     if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
-      botReply = '💙 Hello there! I\'m so excited to celebrate with you today! How are you feeling?';
-    } else if (lowerInput.includes('thank')) {
+      botReply = 'Surpriseee, Happy Birthday Anu Bache! Yup Yup Apurv this side apka pati aur best friend dono. 🎉🎂 Shi bolta hai piyush maan lo uski koi gf nhi hai meri na mai kisi ke sath talking stage pe hu, Wo to mai apko isliye bol raha tha ki ap gussaa ho jao aur ap apne pe dhyaan dene lag jao. And yes I am very Proud of my bacha jaise ap sambhal rhe ho acha kar rhe ho itna jayda improve kar liya hai its so impressive aur ap bilkul bhi guilt mat liya karo, ha i know cheezen thik nhi hai ap thik nhi ho mai thik nhi ho par ap thik to mai bhi thik. And one more thing Congratulations for your internship your reappear clear. Keep Going Ha mai bhi apko miss karta hu aur block ke liye bhi sorry mai emotional ho jata hu apko dekh ke bas isliye. I am and I Will always be proud of you remember this, You are and You will alway special to me. At last Love you 😚😚😟😟😟Ye lo emoji miss kar rhe the na app. Dont Cry Always Be Happpyyyy because you are strong and confident. Good Boi';
+
+    } else if (lowerInput.includes('thankyou so much ji')) {
       botReply = '🥰 You\'re so welcome! You deserve all the happiness in the world!';
     } else if (lowerInput.includes('love')) {
       botReply = '💕 Aww, that means everything! You\'re truly special and loved!';
@@ -69,7 +70,7 @@ const BirthdayWebsite = () => {
       </div>
       
       <div className="hero-content">
-        <h1 className="main-heading">Happy Birthday 💙</h1>
+        <h1 className="main-heading">Happy Birthday Laddooo Master </h1>
         <p className="hero-subtext">
           {/* PLACEHOLDER: Add your emotional message here */}
           Today is a celebration of YOU — the most amazing friend anyone could ask for. 
@@ -86,27 +87,28 @@ const BirthdayWebsite = () => {
     <div className="page-container letter-page">
       <div className={`letter-card ${isLetterVisible ? 'visible' : ''}`}>
         <div className="letter-header">
-          <h2>A Letter For You 💌</h2>
+          <h2>A Letter For You Hnji Hnji Laddooo Bacha ke Liye Hi Hai </h2>
         </div>
         <div className="letter-content">
           {/* PLACEHOLDER: Replace with your birthday letter */}
-          <p>Dear Best Friend,</p>
+          <p>Dear Laddoooo Master,</p>
           <p>
-            On this special day, I want you to know how much you mean to me. 
-            You've been my rock, my laughter, my comfort through everything. 
-            Every moment with you is a treasure I hold close to my heart.
+            Happy Birthday to Princess yes yess ye ke chota sa try meri taraf se i know it's not much tere se jayda pyara nhi hai.
+            ha pata hai abhi sab thik nhi hai apurv ka lag raga hoga tujhe laddoooo par he is also wishing you Happy Birthday ha pati hai wo apka aur hamesha rahega Apko hamesha miss karta hai wo mai bata raha hu na.
           </p>
           <p>
-            Thank you for being YOU — for your kindness, your smile, your beautiful soul. 
-            Watching you grow and shine has been one of the greatest gifts of my life.
+            So Hey guys apko pata hai life ki unending wierd si race mai suddenly ek achi si dost mil gyi ha maine kabhi nhi socha tha ki ek din apki jaisi dost meri life mai ayegi jo meri har baat ko samjhegi, par bus ke last seat ke north south pole se sath baithne lagi aur fir kya tha humari dosti ki shuruwat ho gyi.Hmm logo ne bahut chidaya bahut bola par aisi waisi dosti thodi na thi jo iti assani se tut jaye. 
+            wo baat alag hai hamare beech mai kai baar disaggreement hua par fir bhi humne apni dosti ko kabhi kamzor nhi hone diya. starting mai laga are  bahut time hai abhi toh par dekhte dekhte time kab chala gaya pata hi nhi chala ab to laddooo college se jane wali hai ha uski problems thi par akele uski nhi thi sath sath meri bhi thi, ha bahut natak karti hai par cute bhi hai, ha ashleelta karti hai par kabhi galat matlab nhi bola, ha dantti bhi hai par pyaar se bhi bolti hai, ha thoda time leti hai samjhne par samjh Jati hai. par achanak se ab realise hota hai ki kitni jaldi time nikal gaya aur uske jane ka samaya aa gaya hh sochta hu to mai bhi emotional ho jata hu uske jane ke baad ye college sirf ek haunted place ban jayega aur wresting wring jaha mujhe roj hustle karna padega wo bhi akele kyuki time hi itni jaldi nikal gaya pata bhi nhi chala. Mera bus ka safar to bas ab uske comfy support ko miss karte hue hu nikal jayega bahut galat aadat hai ye support leke ninnii wali. roj miss karta hu apni uncomfortable ninnu travelling ke sath. kuch din pehel hi realise hua ki last dandia night hai uska is college mai ab uske jane ka time ho gaya bahut jaldi Diwali fest sab chala jayega aur wo bhi chali jayegi ha aha aur koi nhi teri hi baat kar raha hu kyu pareshan ho rhi hai mai bhi sochta hu kaise mil gyi itni achi dost. 
+            Sachi mai laddoo bahut acha laga agara tere Jaisi dost nhi hoti toh shayad ye college itna acha nhi hota tune har birthday special banaya ha bahut si achi aadat bhi sikha di aur rona bhi sikha diya ab kya ab toh chali jayegi na ab kiske aage rounga mai. ya kiske aage hasunga ya hasaunga kab jane ka time aa gaya pata hi nihi chala
           </p>
           <p>
-            Here's to another year of adventures, laughter, and memories we'll cherish forever. 
-            You deserve all the happiness in the world today and always.
+            At Last Laddooo thankyou mujhe surprise dene ke liye aur meri life ka ek bahut hi special part banne ke liye, itne pyaare pyaare gifts dene ke liye 
+            Wishing you a day filled with love, laughter, and all the things that make you happiest. 
+            Here's to another year of amazing adventures and unforgettable memories together!
           </p>
           <p className="letter-signature">
-            With all my love,<br />
-            Your Best Friend 💙
+            With all my love in a Possitive Way,<br />
+            Your Best Friend Gudduuu 
           </p>
         </div>
       </div>
@@ -120,16 +122,16 @@ const BirthdayWebsite = () => {
             <p>Video will play here</p>
             <small>Replace the src attribute in the code with your video file</small>
           </div>
-          {/* Uncomment and add your video:
+          {// Uncomment and add your video:
           <video controls>
             <source src="assets/birthday-video.mp4" type="video/mp4" />
           </video>
-          */}
+          }
         </div>
       </div>
 
       <button className="cta-button" onClick={() => setCurrentPage('chat')}>
-        One More Thing 💬
+        One More Surprise
       </button>
     </div>
   );
@@ -137,7 +139,7 @@ const BirthdayWebsite = () => {
   const renderChat = () => (
     <div className="page-container chat-page">
       <div className="chat-header">
-        <h2>Let's Talk! 💭</h2>
+        <h2> Hellooo! Apurv Here </h2>
         <p>I'm here to make your day even more special</p>
       </div>
 
@@ -162,7 +164,7 @@ const BirthdayWebsite = () => {
           className="chat-input"
         />
         <button onClick={handleSendMessage} className="send-button">
-          Send 💙
+          Send
         </button>
       </div>
     </div>
