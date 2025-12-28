@@ -120,55 +120,7 @@ const BirthdayWebsite = () => {
         </div>
       </div>
 
-      {/* Photos Grid Section */}
-      <div className={`photos-grid-section ${isLetterVisible ? 'visible' : ''}`}>
-        <h3 className="photos-heading">Our Special Moments 📸</h3>
-        <p className="photos-subtext">Memories that made our friendship beautiful</p>
-        
-        <div className="photos-grid">
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo1.jpg" alt="Memory 1" />
-            </div>
-            <p className="photo-caption">First memory together</p>
-          </div>
-          
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo2.jpg" alt="Memory 2" />
-            </div>
-            <p className="photo-caption">Happy times</p>
-          </div>
-          
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo3.jpg" alt="Memory 3" />
-            </div>
-            <p className="photo-caption">Unforgettable moments</p>
-          </div>
-          
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo4.jpg" alt="Memory 4" />
-            </div>
-            <p className="photo-caption">Adventures together</p>
-          </div>
-          
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo5.jpg" alt="Memory 5" />
-            </div>
-            <p className="photo-caption">Cherished friendship</p>
-          </div>
-          
-          <div className="photo-card">
-            <div className="photo-placeholder">
-              <img src="/photo6.jpg" alt="Memory 6" />
-            </div>
-            <p className="photo-caption">Forever memories</p>
-          </div>
-        </div>
-      </div>
+
 
       <div className={`memories-section ${isLetterVisible ? 'visible' : ''}`}>
         <h3>Our Beautiful Memories 🎬</h3>
