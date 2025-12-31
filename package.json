@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -noEmit && vite build",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "tsc --noEmit && vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Piyushkumar-20/Birthday.git"
@@ -19,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Piyushkumar-20/Birthday/issues"
   },
-  "homepage": "https://github.com/Piyushkumar-20/Birthday#readme",
+  "homepage": "https://piyushkumar-20.github.io/birthday-website/",
   "dependencies": {
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
@@ -27,8 +29,9 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.2",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.9.3",
-    "vite": "^5.0.12",
-    "@vitejs/plugin-react": "^4.3.2"
+    "vite": "^7.3.0"
   }
 }

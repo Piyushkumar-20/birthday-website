@@ -237,9 +237,9 @@ const BirthdayWebsite = () => {
             {
               type: 'bot' as const,
               images: [
-                '/Memory 1.jpg',
-                '/Memory 2.jpg',
-                '/Memory 3.jpg'
+                'images/Memory 1.jpg',
+                'images/Memory 2.jpg',
+                'images/Memory 3.jpg'
               ]
             }
           ]);
@@ -272,16 +272,16 @@ const BirthdayWebsite = () => {
       {/* Polaroid Photos Section */}
       <div className="polaroid-container">
         <div className="polaroid" style={{ '--rotation': '-3deg' } as React.CSSProperties}>
-          <img src="/laddoo-1.jpg" alt="Memory moment" />
+          <img src="images/laddoo-1.jpg" alt="Memory moment" />
         </div>
         <div className="polaroid" style={{ '--rotation': '2deg' } as React.CSSProperties}>
-          <img src="/laddoo-2.jpg" alt="Happy memory" />
+          <img src="images/laddoo-2.jpg" alt="Happy memory" />
         </div>
         <div className="polaroid" style={{ '--rotation': '-4deg' } as React.CSSProperties}>
-          <img src="/laddoo-3.jpg" alt="Special moment" />
+          <img src="images/laddoo-3.jpg" alt="Special moment" />
         </div>
         <div className="polaroid" style={{ '--rotation': '3deg' } as React.CSSProperties}>
-          <img src="/laddoo-4.jpg" alt="Cherished memory" />
+          <img src="images/laddoo-4.jpg" alt="Cherished memory" />
         </div>
       </div>
       
@@ -344,7 +344,7 @@ const BirthdayWebsite = () => {
         <h3>Our Beautiful Memories 🎬</h3>
         <div className="video-container">
           <video ref={letterVideoRef} controls playsInline>
-            <source src="/birthday-video.mp4" type="video/mp4" />
+            <source src="videos/birthday-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -2032,8 +2032,8 @@ const BirthdayWebsite = () => {
       `}</style>
 
       {/* Background audio elements (hidden) */}
-      <audio ref={welcomeAudioRef} src="/welcome-song.mp3" preload="auto" autoPlay />
-      <audio ref={chatAudioRef} src="/chat-song.mp3" preload="auto" />
+      <audio ref={welcomeAudioRef} src="audio/welcome-song.mp3" preload="auto" autoPlay />
+      <audio ref={chatAudioRef} src="audio/chat-song.mp3" preload="auto" />
 
       {currentPage === 'home' && renderHome()}
       {currentPage === 'letter' && renderLetter()}
